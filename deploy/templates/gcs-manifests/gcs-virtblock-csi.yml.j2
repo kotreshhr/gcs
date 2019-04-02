@@ -47,7 +47,7 @@ spec:
               mountPath: /var/lib/csi/sockets/pluginproxy/
 
         - name: glustervirtblock-attacher
-          image: docker.io/gluster/glustervirtblock-csi-driver:latest
+          image: docker.io/kotreshhr/glustervirtblock-csi-driver:latest
           args:
             - "--nodeid=$(NODE_ID)"
             - "--v=5"
@@ -127,7 +127,7 @@ spec:
             capabilities:
               add: ["CAP_MKNOD", "CAP_SYS_ADMIN", "SYS_ADMIN"]
             allowPrivilegeEscalation: true
-          image: docker.io/gluster/glustervirtblock-csi-driver:latest
+          image: docker.io/kotreshhr/glustervirtblock-csi-driver:latest
           args:
             - "--nodeid=$(NODE_ID)"
             - "--v=5"
@@ -228,7 +228,7 @@ spec:
             capabilities:
               add: ["CAP_SYS_ADMIN", "SYS_ADMIN"]
             allowPrivilegeEscalation: true
-          image: docker.io/gluster/glustervirtblock-csi-driver:latest
+          image: docker.io/kotreshhr/glustervirtblock-csi-driver:latest
           args:
             - "--nodeid=$(NODE_ID)"
             - "--v=5"
